@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="jade"/>
+    <meta name="description" content="맛집지도 서비스"/>
+    <meta name="keywords" content="맛집지도, 플레이트"/>
+    <title>주플레이트, 맛집 지도</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/map.css"/>
+
+</head>
+<body>
+    <nav>
+        <div class="inner">
+            <div class="nav-container">
+                <h1 class="nav-title">JUPLATE</h1>
+                <button class="nav-contact">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="category">
+            <div class="inner">
+                <div class="category-container">
+                    <h2 class="category-title">맛집지도 카테고리를 선택해보세요</h2>
+                    <div class="category-list">
+                        <button class="category-item" id="korea">한식</button>
+                        <button class="category-item" id="china">중식</button>
+                        <button class="category-item" id="japan">일식</button>
+                        <button class="category-item" id="western_food">양식</button>
+                        <button class="category-item" id="street_food">분식</button>
+                        <button class="category-item" id="roast">구이</button>
+                        <button class="category-item" id="sushi">회/초밥</button>
+                        <button class="category-item" id="etc">기타</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--카카오 지도-->
+        <div id="map" class="inner"></div>
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js" integrity="sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a6e4fedb6499afcea5bcd9fe7fbbce9d&libraries=services"></script>
+    <script type="text/javascript" src="./js/axios-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* 
+color
+
+#490a3d
+#bd1550
+#e97f02 - main
+#f8ca00 
+
+*/
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+html {
+    font-family: 'NanumSquareRound';
+    font-size: 10px;
+}
+
+nav {
+    font-family: 'GmarketSansMedium';
+    background-color: #e97f02;
+    height: 59px;
+}
+
+.nav-container {
+    padding:1rem 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 2rem;
+
+}
+
+.nav-contact {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: white;
+}
+
+main {
+    padding-top:1.5rem;
+    height: calc(100% - 59px);
+    display: flex;
+    flex-direction: column;
+}
+.inner {
+    padding: 0 2rem;
+
+}
+
+.category-title {
+    font-size: 3rem;
+    font-family: 'GmarketSansMedium';
+
+}
+
+.category-item {
+    width: 24%;
+    height: 5rem;
+    background: none;
+    border: 0;
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+
+.category-item:hover {
+    color: #f8ca00 ;
+    cursor: pointer;
+}
+
+@media all and (min-width: 1024px) {
+    .inner{
+        max-width: 1024px;
+        margin:auto;
+    }
+}
+
+/* map api */
+
+
+#map {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
